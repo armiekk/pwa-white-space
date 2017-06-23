@@ -2,8 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRouterModule } from './app-router.cpmponent';
+import { AppRouterModule } from './app-router.module';
+import { MaterialWrapModule } from './material-wrap.module';
+import { AngularFireModule } from 'angularfire2';
+import { environment } from '../environments/environment';
 
+import { AuthenService, FirebaseService } from './service';
 
 import { AppComponent } from './app.component';
 
@@ -23,15 +27,17 @@ import 'lodash';
     RegisterComponent,
     ProfileComponent,
     PageNotFoundComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
+    MaterialWrapModule,
     BrowserAnimationsModule,
     FormsModule,
     AppRouterModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [],
+  providers: [AuthenService, FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
