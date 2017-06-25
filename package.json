@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "precache": "sw-precache --verbose --config=sw-precache-config.js",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -22,8 +23,6 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
-    "@types/lodash": "^4.14.66",
-    "angular2-jwt": "^0.2.3",
     "angularfire2": "^4.0.0-rc.1",
     "bulma": "^0.4.2",
     "core-js": "^2.4.1",

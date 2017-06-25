@@ -1,8 +1,21 @@
 <md-toolbar class="dark-primary-color primary-text-color">
-  <span class="text-primary-color">Lost And Found</span>
+  <a (click)="goToHomePage()" class="text-primary-color">Lost And Found</a>
   <span class="toolbar-spacer"></span>
-  <a md-icon-button>
+  <button md-icon-button [mdMenuTriggerFor]="menu">
     <md-icon class="text-primary-color">settings</md-icon>
-  </a>
+  </button>
+  <md-menu #menu="mdMenu">
+    <button md-menu-item (click)="goToProfilePage()">
+      <md-icon class="primary-text-color">face</md-icon>
+      <span class="primary-text-color">Profile</span>
+    </button>
+    <button md-menu-item (click)="logout()">
+      <md-icon class="primary-text-color">exit_to_app</md-icon>
+      <span class="primary-text-color">Log out</span>
+    </button>
+  </md-menu>
 </md-toolbar>
 <router-outlet></router-outlet>
+<button *ngIf="!isCreatePost" md-fab class="fab-btn" (click)="goToCreatePost()">
+  <md-icon>edit</md-icon>
+</button>

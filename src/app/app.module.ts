@@ -22,9 +22,9 @@ import { PageNotFoundComponent } from './page/page-not-found/page-not-found.comp
 import { LoginComponent } from './page/login/login.component';
 
 import 'hammerjs';
-import 'lodash';
 import { PostComponent } from './component/post/post.component';
 import { PostListComponent } from './component/post-list/post-list.component';
+import { CreatePostComponent } from './page/create-post/create-post.component';
 
 @NgModule({
   declarations: [
@@ -37,13 +37,21 @@ import { PostListComponent } from './component/post-list/post-list.component';
     LoginComponent,
     PostComponent,
     PostListComponent,
+    CreatePostComponent,
   ],
   imports: [
     BrowserModule,
     MaterialWrapModule,
     FormsModule,
     AppRouterModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp({
+      apiKey: 'AIzaSyDZlyvixJBqR8dgRh47eH5asofo-Z6frSo',
+      authDomain: 'pwa-white-space.firebaseapp.com',
+      databaseURL: 'https://pwa-white-space.firebaseio.com',
+      projectId: 'pwa-white-space',
+      storageBucket: 'pwa-white-space.appspot.com',
+      messagingSenderId: '281280781534'
+    }),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     BrowserAnimationsModule,

@@ -1,0 +1,32 @@
+[debug] [2017-06-25T12:32:11.765Z] ----------------------------------------------------------------------
+[debug] [2017-06-25T12:32:11.767Z] Command:      C:\Program Files\nodejs\node.exe C:\Users\armst0910\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2017-06-25T12:32:11.768Z] CLI Version:  3.9.1
+[debug] [2017-06-25T12:32:11.768Z] Platform:     win32
+[debug] [2017-06-25T12:32:11.768Z] Node Version: v6.9.5
+[debug] [2017-06-25T12:32:11.772Z] Time:         Sun Jun 25 2017 19:32:11 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-25T12:32:11.772Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-25T12:32:11.813Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-06-25T12:32:11.814Z] > authorizing via signed-in user
+[debug] [2017-06-25T12:32:11.818Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-06-25T12:32:11.818Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/Y9bQesJLR5-ayKw2SQ5c9vK764xB0cdqYrREc9zPTFs',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jun 25 2017 19:32:11 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-25T12:32:12.476Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-25T12:32:12.490Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pwa-white-space  
+ Sun Jun 25 2017 19:32:12 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-25T12:32:13.749Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-25T12:32:13.750Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pwa-white-space/tokens  
+ Sun Jun 25 2017 19:32:13 GMT+0700 (SE Asia Standard Time)
+[debug] [2017-06-25T12:32:14.714Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'pwa-white-space'...
+[info] 
+[info] i  deploying database, hosting
+[info] +  database: rules ready to deploy.
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2017-06-25T12:32:17.531Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/pwa-white-space/uploads/-KnUEZ-C5VRJdNsL5oQy?fileCount=13&message=  
+ Sun Jun 25 2017 19:32:17 GMT+0700 (SE Asia Standard Time)

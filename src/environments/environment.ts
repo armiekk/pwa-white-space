@@ -5,7 +5,7 @@
 
 export const environment = {
   production: false,
-  firebase: {
+  firebaseConfig: {
     apiKey: 'AIzaSyDZlyvixJBqR8dgRh47eH5asofo-Z6frSo',
     authDomain: 'pwa-white-space.firebaseapp.com',
     databaseURL: 'https://pwa-white-space.firebaseio.com',

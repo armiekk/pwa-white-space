@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuardService } from '../guard/auth-guard.service';
 
 import { HomeComponent } from '../page/home/home.component';
+import { CreatePostComponent } from '../page/create-post/create-post.component';
 import { TemplateComponent } from '../page/template/template.component';
 import { RegisterComponent } from '../page/register/register.component';
 import { ProfileComponent } from '../page/profile/profile.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
             { path: 'profile', component: ProfileComponent },
+            { path: 'create', component: CreatePostComponent }
         ]
     },
     { path: 'login', component: LoginComponent },

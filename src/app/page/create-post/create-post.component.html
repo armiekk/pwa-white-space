@@ -1,0 +1,46 @@
+<div class="columns">
+  <div class="column"></div>
+  <div class="column">
+    <md-card class="create-post-container">
+      <md-card-header>
+        <h3>สร้างประกาศ</h3>
+      </md-card-header>
+      <md-card-content>
+        <div class="columns" style="width: 100%">
+          <div class="column">
+            <md-input-container class="input-full-width">
+              <input mdInput placeholder="เรื่อง" [(ngModel)]="postModel.name">
+            </md-input-container>
+          </div>
+        </div>
+        <div class="columns" style="width: 100%">
+          <div class="column">
+            <md-input-container class="input-full-width">
+              <textarea mdInput placeholder="รายละเอียด" [(ngModel)]="postModel.name"></textarea>
+            </md-input-container>
+          </div>
+        </div>
+        <div class="columns" style="width: 100%">
+          <div class="column">
+            <md-input-container class="input-full-width">
+              <input mdInput placeholder="เบอร์โทรศัพท์" [(ngModel)]="postModel.name">
+            </md-input-container>
+          </div>
+        </div>
+        <div class="columns" style="width: 100%">
+          <div class="column">
+            <md-input-container class="input-full-width">
+              <input mdInput placeholder="เงินรางวัล" [(ngModel)]="postModel.name">
+            </md-input-container>
+          </div>
+        </div>
+        <div class="columns" style="width: 100%">
+          <div class="column">
+            <button md-button style="width: 100%" (click)="createPost(postModel)">สร้างประกาศ</button>
+          </div>
+        </div>
+      </md-card-content>
+    </md-card>
+  </div>
+  <div class="column"></div>
+</div>

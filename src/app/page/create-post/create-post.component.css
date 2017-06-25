@@ -1,0 +1,9 @@
+.create-post-container {
+    margin: 1.5em auto;
+    width: 600px;
+    min-height: 500px;
+}
+
+.input-full-width {
+    width: 100%;
+}
