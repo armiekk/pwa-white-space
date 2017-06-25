@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+html, body {
+    background-color: #795548;
+}
+
+h2 {
+    font-size: 2em;
+}

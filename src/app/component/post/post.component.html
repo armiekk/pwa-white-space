@@ -1,0 +1,37 @@
+<md-card class="post-item">
+    <md-card-header>
+        <md-card-title>
+            <h2>{{ data.name }}</h2>
+        </md-card-title>
+    </md-card-header>
+    <md-progress-spinner class="spinner text-primary-color" *ngIf="imgUrl === null || imgUrl === undefined; else imgContent"
+        [mode]="'indeterminate'"></md-progress-spinner>
+    <ng-template #imgContent>
+        <img class="post-img" [src]="imgUrl">
+    </ng-template>
+    <md-card-content>
+        <md-list>
+            <md-list-item>
+                <div class="columns" style="width: 100%">
+                    <div class="column is-one-quarter"><strong>รายละเอียด:</strong></div>
+                    <div class="column">{{ data.description }}</div>
+                </div>
+            </md-list-item>
+            <md-list-item>
+                <div class="columns" style="width: 100%">
+                    <div class="column is-one-quarter"><strong>เบอร์โทรศัพท์:</strong></div>
+                    <div class="column">{{ data.tel }}</div>
+                </div>
+            </md-list-item>
+            <md-list-item>
+                <div class="columns" style="width: 100%">
+                    <div class="column is-one-quarter"><strong>เงินรางวัล:</strong></div>
+                    <div class="column">{{ data.prize }}</div>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-card-content>
+    <md-card-actions class="align-btn">
+        <button md-button>แจ้งเบาะแส</button>
+    </md-card-actions>
+</md-card>

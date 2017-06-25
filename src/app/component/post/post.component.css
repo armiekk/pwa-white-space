@@ -1,0 +1,12 @@
+.post-item {
+    width: 600px;
+    margin: 1.5em auto;
+}
+
+.spinner, .post-img {
+    margin: 0 auto;
+}
+
+.align-btn {
+    text-align: right;
+}
